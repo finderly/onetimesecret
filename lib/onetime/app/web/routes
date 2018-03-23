@@ -11,9 +11,9 @@ POST  /                                          Onetime::App#create_secret
 GET   /about                                     Onetime::App#about
 GET   /logo                                      Onetime::App#logo
 
-#GET   /docs/api                                  Onetime::App#show_docs
-#GET   /docs/api/secrets                          Onetime::App#show_docs_secrets
-#GET   /docs/api/libs                             Onetime::App#show_docs_libs
+GET   /docs/api                                  Onetime::App#show_docs
+GET   /docs/api/secrets                          Onetime::App#show_docs_secrets
+GET   /docs/api/libs                             Onetime::App#show_docs_libs
 
 GET   /private/:key                              Onetime::App#private_uri
 GET   /shared/:key                               Onetime::App#secret_uri
@@ -51,10 +51,10 @@ GET   /info/terms                                Onetime::App::Info#terms
 #POST  /account/apikey                            Onetime::App#generate_apikey
 #POST  /account/subdomain                         Onetime::App#update_subdomain
 
-#GET   /contributor                               Onetime::App#contributors
+GET   /contributor                               Onetime::App#contributors
 #POST  /contributor                               Onetime::App#contributors
 
-#GET   /translations                              Onetime::App#translations
+GET   /translations                              Onetime::App#translations
 
 #GET   /email                                     Onetime::App#test_send_email
 
